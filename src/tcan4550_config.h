@@ -1,5 +1,5 @@
 ﻿// 使用するHardwareの定義
-// プリプロセッサマクロでincludeするbsp_ボード名.hを切り替える
+// プリプロセッサマクロでincludeするtcan4550_config_<board>.hを切り替える
 
 #ifndef TCAN4550_CONFIG_H
 #define TCAN4550_CONFIG_H
