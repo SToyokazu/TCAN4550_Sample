@@ -46,6 +46,7 @@ MRAMの設定、CAN設定、CAN通信、エラー処理を実現する。
 ただし、MCAN固有のレジスタやMRAMのアクセス方法は外部から提供される。  
 
 ### ファイル名
+- mcan_map.h
 - mcan.h
 - mcan.c
 
@@ -61,12 +62,15 @@ MRAMの設定、CAN設定、CAN通信、エラー処理を実現する。
 # HAL(Hardware Abstraction Layer)層
 ### 概要
 利用するマイコンの違いを吸収するために、GPIOとSPI通信のインターフェースを提供する。  
+使用するマイコンに合わせてplatform_**.cppの実装を変更する。
 
 ### ファイル名
 - platform_gpio.h
 - platform_spi_master.h
-- platform_gpio.c
-- platform_spi_master.c
+- platform_delay.h
+- platform_gpio.cpp
+- platform_spi_master.cpp
+- platform_delay.cpp
 
 ### 機能
 - GPIOの初期化
