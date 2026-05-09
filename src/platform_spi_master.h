@@ -20,9 +20,9 @@ typedef struct
     uint8_t mode;
     uint8_t bitOrder;   //0:LSBFIRST, 1:MSBFIRST
     uint32_t frequency; //[Hz]
-} PLAT_SPI_MST_CONFIG;
+} PLAT_SPI_Master_Config
 
-void plat_spi_mst_init(PLAT_SPI_MST_CONFIG config);
+void plat_spi_mst_init(PLAT_SPI_Master_Config config);
 uint8_t* plat_spi_mst_transfer(uint8_t* data, uint8_t size);
 
 #endif
